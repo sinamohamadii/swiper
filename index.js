@@ -1,13 +1,19 @@
 const swiper = document.querySelector('.swiper');
+let width = screen.width - 50;
 
 const next = () => {
-    let width = screen.width - 50;
 
-    console.log(width);
+    // console.log(width);
 
     let rightPosition = 1 * getComputedStyle(swiper).right.replace('p', '').replace('x', '');
 
-    console.log(rightPosition);
+    let remainPlusScreen = 3054 + rightPosition;
+
+    let remain = remainPlusScreen - width;
+
+    // console.log(remain);
+
+    //  console.log(rightPosition);
 
     let forward;
 
@@ -17,18 +23,36 @@ const next = () => {
     if (rightPosition < 0) {
         forward = -1 * rightPosition + width;
     }
-    if (forward > 2000) {
-        forward = 2000;
+    if (remain < width) {
+        forward = -1 * rightPosition + remain;
     }
 
 
-    console.log(forward);
+    // console.log(forward);
     // if (rightPosition = -1990) {
     //     return;
     // }
     swiper.style.right = `${-forward}px`;
 
-    console.log(rightPosition);
+    // console.log(rightPosition);
 };
 
-const previous = () => { };
+const previous = () => {
+
+    let rightPosition = 1 * getComputedStyle(swiper).right.replace('p', '').replace('x', '');
+
+    let backward;
+
+    if (rightPosition === 0) {
+        return;
+    }
+    if (rightPosition < 0) {
+        backward = -1 * rightPosition - width;
+    }
+    if (-1 * rightPosition < width) {
+        backward = 0;
+    }
+
+
+    swiper.style.right = `${-backward}px`;
+};
