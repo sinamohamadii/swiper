@@ -1,5 +1,5 @@
 const swiper = document.querySelector('.swiper');
-let width = screen.width - 50;
+let width = window. innerWidth - 50;
 
 const next = () => {
 
