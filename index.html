@@ -12,23 +12,232 @@
 <body>
     <div class='container'>
         <div class='content-container'>
-            <button onclick=next() type='button' class='next-btn'>
-                <svg width='33' height='33' fill='currentColor' class='bi bi-arrow-left' viewBox='0 0 16 16'>
+            <button class='next-btn' onclick=next() type='button'>
+                <svg class='bi bi-arrow-left' width='33' height='33' fill='currentColor' viewBox='0 0 16 16'>
                     <path fill-rule='evenodd'
                         d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z' />
                 </svg>
             </button>
-            <button onclick=previous() type='button' class='prev-btn'>
-                <svg width='33' height='33' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'>
+            <button class='prev-btn' onclick=previous() type='button'>
+                <svg class='bi bi-arrow-right' width='33' height='33' fill='currentColor' viewBox='0 0 16 16'>
                     <path fill-rule='evenodd'
                         d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z' />
                 </svg>
             </button>
             <div class='swiper'>
                 <div class='items-container'>
-                    <a href='#' class='item'>
-                        <div class='photo-container'>
-                            <img src='./assets/itemPhoto.png' alt='item' />
+                    <a id='item_1' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_2' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto2.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_3' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_4' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_5' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_6' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_7' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_8' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_9' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_10' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_11' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_12' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto2.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_13' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_14' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_15' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_16' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_17' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_18' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_19' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto4.png' alt='item' />
+                        </div>
+                        <div class='name-txt-container'>
+                            <span>دوره قاجار</span>
+                        </div>
+                        <div class='year-txt-container'>
+                            <span>3500</span>
+                        </div>
+                    </a>
+                    <a id='item_20' class='item' href='#'>
+                        <div class=' photo-container'>
+                            <img class='image' src='./assets/itemPhoto3.png' alt='item' />
                         </div>
                         <div class='name-txt-container'>
                             <span>دوره قاجار</span>
