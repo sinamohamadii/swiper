@@ -1,24 +1,27 @@
+/* Buttons */
+
 const swiper = document.querySelector('.swiper');
-const width = window. innerWidth - 170;
+const width = window.innerWidth;
+const swiperWidth = 3054;
 
 const next = () => {
     let rightPosition = 1 * getComputedStyle(swiper).right.replace('p', '').replace('x', '');
 
-    let remainPlusScreen = 3054 + rightPosition;
+    let remainPlusScreen = swiperWidth + rightPosition;
 
     let remain = remainPlusScreen - width;
 
     let forward;
 
     if (rightPosition === 0) {
-        forward = rightPosition + width;
+        forward = width;
     }
     if (rightPosition < 0) {
-        forward = -1 * rightPosition + width;
+        forward = -1 * rightPosition + width -170;
+        console.log(remainPlusScreen);
     }
     if (remain < width) {
-        forward = -1 * rightPosition + remain;
-        console.log(forward);
+        forward = -1 * rightPosition + remain + 70;
     }
 
     swiper.style.right = `${-forward}px`;
