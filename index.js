@@ -17,7 +17,7 @@ const next = () => {
         forward = width;
     }
     if (rightPosition < 0) {
-        forward = -1 * rightPosition + width -170;
+        forward = -1 * rightPosition + width - width/3;
         console.log(remainPlusScreen);
     }
     if (remain < width) {
